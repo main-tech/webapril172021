@@ -93,7 +93,7 @@ div.carousel-caption
   mix-blend-mode:difference ;
  
   font-weight: bold;
-  /*text-shadow: color offsetx offsety blur;*/
+  
   text-shadow: 2px 2px 33px #ffffff;
  
   
@@ -236,21 +236,7 @@ to{ color:silver;}
   animation-direction:alternate;
   animation-delay:10s;
 }
-@keyframes listgroupanimation {
-  0%   { left:0px; top:0px;}
-  25%  { left:200px; top:0px;}
-  50%  { left:200px; top:200px;}
-  75%  { left:0px; top:200px;}
-  100% { left:0px; top:0px;}
-}
-.anime
-{
-  margin-top:0px;
-  animation-name:listgroupanimation;
-  animation-duration:3s;
-  animation-direction:alternate;
- 
-}
+
 .carousel-indicators
 {
   z-index: 1;
@@ -260,17 +246,38 @@ to{ color:silver;}
   background-color:grey;
  
 }
-
+/*color gradient*/
 .gradient
 {
   /* linear-gradient(direction, color1, color2);
   or
   linear-gradient(direction, color1, color2.color3);
   */
-  background: linear-gradient(to bottom, rgb(222, 255, 212), rgb(25, 252, 44));
+  background: linear-gradient(to bottom, #ffffff, #869496);
   padding-bottom:40px;
 }
 div{
 margin-top:0px;
 margin-bottom:0px;
+}
+.gradient2
+{
+  /* linear-gradient(direction, color1, color2);
+  or
+  linear-gradient(direction, color1, color2.color3);
+  */
+  background: linear-gradient(to bottom, rgb(233, 255, 236), rgb(255, 252, 85));
+  padding-bottom:40px;
+}
+ul
+{
+list-style-type: none;
+}
+a:hover {
+color: rgb(255, 187, 0);
+text-decoration: none;
+}
+h4
+{
+  color:rgb(29, 0, 0);
 }
